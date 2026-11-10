@@ -15,7 +15,8 @@ const app = express();
 // Middleware
 app.use(
   cors({
-    origin: '*',
+    origin:["http://localhost:5173",
+    "https://campusride-frontend-3.onrender.com"] ,
     credentials: true,
   })
 );
